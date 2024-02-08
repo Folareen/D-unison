@@ -1,0 +1,81 @@
+.search-order{
+  width: 50% !important;
+}
+.eachv-filter {
+  width: 80%;
+  text-align: center;
+  color: #71727a;
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.switch-filter-box {
+  width: 100%;
+}
+.filtr-main-box {
+  width: 50%;
+}
+.tab-head {
+  font-size: 12px;
+  color: #1e2134;
+}
+.bdy-tabb {
+  font-size: 10px;
+  color: #1e2134;
+}
+.bbrd-col {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frs {
+  border-right: 1px solid rgba(0, 0, 0, 0.23);
+}
+.sta-pay {
+  border-radius: 4px;
+  background: #10af3c;
+  height: 30px;
+  width: 60px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.unpaid {
+  background: #ff0000;
+}
+
+@media only screen and (max-width: 940px) {
+  .search-order{
+    width: 100% !important;
+  }
+  .filtr-main-box {
+    width: 100%;
+  }
+  .tab-head {
+    font-size: 10px;
+  }
+  .tav-cont {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .table {
+    width: 1000px;
+    scrollbar-width: normal;
+  }
+  .table::-webkit-scrollbar {
+    height: 0.1vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .filtr-main-box {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

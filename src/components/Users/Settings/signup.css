@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .full input{
+    width: 120% !important;
+}
+.full-2 .input-group{
+    width: 120% !important;
+    
+}
+
+.full button{
+    width: 120% !important;
+}
+
+.form-select {
+    width: 120% !important;
+   
+}
+
+
+}
+

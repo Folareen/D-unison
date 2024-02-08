@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .full input{
+    width: 120% !important;
+}
+
+.full textarea{
+    width: 120% !important;
+}
+
+.form-select {
+    width: 120% !important;
+   
+}
+
+
+
+}
+
+.full textarea{
+    height: 130px !important;
+}
+

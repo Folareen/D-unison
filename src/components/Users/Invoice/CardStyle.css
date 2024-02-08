@@ -1,0 +1,38 @@
+.switch-filter-box-2 {
+    border-radius: 16px;
+    background: #f8f9fe;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 45px;
+    width: 80%;
+  }
+  .inv-text{
+    text-align: center !important;
+  }
+  .each-filter-2 {
+    width: 50%;
+    text-align: center;
+    color: #71727a;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+.top{
+    width: 140% !important;
+}
+.card-text{
+    font-size: .7rem;
+    font-weight: 600;
+}
+.serv-btn{
+    width: 60% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .serv-btn{
+        width: 50% !important;
+    }
+}

@@ -1,0 +1,15 @@
+th, td{
+    font-size: 12px !important;
+  }
+
+.table-btn{
+    height: 20px;
+    width: 70px;
+    font-size: 10px;
+    background-color: #1A932E2E;
+    color: #1A932E;
+    border-color: #1A932E2E !important;
+}
+table{
+    
+}

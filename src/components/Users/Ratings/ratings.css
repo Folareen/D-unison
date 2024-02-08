@@ -1,0 +1,41 @@
+.each-card-box-2 {
+    height: 120px !important;
+    width: 32% !important;
+}
+
+@media only screen and (max-width: 600px){
+    .rating-img{
+        width: 100%;
+    }
+
+.each-card-box-2 {
+    height: 120px !important;
+    width: 100% !important;
+}
+.rating-text{
+    padding-left: 15px;
+    font-size: 14px !important;
+}
+.rating-text-top{
+    font-size: 13px !important;
+}
+
+
+}
+
+@media only screen and (max-width: 450px){
+    .star-row{
+        padding-top: 4px;
+        padding-left: 14px !important;
+    }
+
+    .rating-img{
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+.rating-text-bld {
+    padding-left: 15px;
+    font-size: 14px !important;
+}
+}

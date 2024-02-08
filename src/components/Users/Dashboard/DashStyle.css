@@ -1,0 +1,167 @@
+.th{
+  font-size: 100000px !important;
+}
+.tes{
+  width: 100% !important;
+  padding: 0px 0px !important;
+}
+.each-card-box {
+  height: 120px !important;
+  width: 24.1% !important;
+}
+
+.top-card {
+    font-size: .9rem;
+    font-weight: 600;
+    
+}
+.card-top{
+    border-radius:'2rem' !important;
+    width:'100%' !important;
+    height:'90%' !important;
+}
+
+.count{
+  padding-left: 15px;
+}
+
+.c-tst{
+  font-size: 14px !important;
+  font-weight: 700;
+  padding-left: 15px;
+
+}
+.top-amt{
+    font-weight:900;
+}
+.log{
+color: #407BFF;
+    
+}
+
+.td{
+  font-size: .5rem;
+}
+
+
+
+.service-tab{
+    background: linear-gradient(277deg, #005ADE 0.76%, #005ADE 100%);
+
+
+}
+table{
+    background-color: linear-gradient(277deg, #005ADE 0.76%, #005ADE 100%) !important;
+}
+
+
+
+  @media only screen and (max-width: 1050px) {
+    .card {
+        width: 100% !important;
+      }
+    .top-card{
+        font-size: 1rem;
+    }
+    .log{
+        width:2rem ;
+        height: 2rem;
+    }
+ 
+  }
+  @media only screen and (max-width: 900px) {
+    
+    .top-card{
+        font-size: .5rem;
+    }
+    .service-tab{
+      width: 75% !important;
+      height: 90%;
+
+    }
+    .service-img{
+      width: 100% !important;
+    }
+    
+    .hire-btn{
+      margin-top:-50px;
+      width: 170px !important;
+      height: 40px;
+      
+      
+      
+    }
+    .serv-txt{
+      padding:3px !important;
+      font-size: 12px !important;
+      font-weight: 700;
+
+    }
+
+    
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .b-tst{
+      font-size: 10px;
+    }
+    
+    .each-card-box {
+      height: 120px !important;
+      width: 48% !important;
+      
+  }
+    .c-tst{
+      margin-top: 12px;
+      font-size: 16px !important;
+      font-weight: 700;
+      padding-left: 30px;
+  
+    }
+   .count{
+    padding-left: 30px;
+   }
+    
+    .card-top {
+        width: 100% !important;
+        height: 80% !important;
+      }
+    .top-card{
+        font-size: .7rem;
+      
+    }
+    
+    .serv-count{
+      padding-left: 5px !important;
+    }
+
+    
+    
+  }
+  @media only screen and (max-width: 400px) {
+    .card {
+        width: 100%;
+      }
+    .top-card{
+        font-size: .5rem;
+    }
+    .serv-count{
+      padding-left: 5px !important;
+    }
+    
+    .c-tst{
+      margin-top: 12px;
+      font-size: 16px !important;
+      font-weight: 700;
+      padding-left: 18px !important;
+  
+    }
+    .b-tst{
+      font-size: 10px;
+    }
+    .count b{
+      font-size: 12px !important;
+      padding-left: 1px !important;
+    }
+ 
+  }
