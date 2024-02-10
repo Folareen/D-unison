@@ -1,0 +1,185 @@
+.customer-container,
+.all-service-container,
+.expense-container,
+.orders-service-box {
+  background: #f3f2f7;
+}
+.customer-main-box,
+.all-service-box-container,
+.expense-box-cont,
+.orders-main-box {
+  padding: 20px;
+}
+.input-container-box {
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: #fdfdfd;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+.bx-inp {
+  outline: none;
+  border: none;
+  width: 95%;
+  background: none;
+  caret-color: #2d9cdb;
+  font-size: 12px;
+}
+.seac-icon {
+  font-size: 20px;
+  color: #a4a4a4;
+}
+.customer-card-container {
+  background: #fff;
+  width: 32%;
+  padding: 20px 10px;
+  border-radius: 15px;
+  position: relative;
+}
+.cus-image-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.customer-name {
+  font-size: 14px;
+  font-weight: 900;
+}
+.post-cus {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.comp-cus {
+  font-size: 12px;
+  font-weight: 800;
+}
+.cont-icon {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: #005ade;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-txt {
+  font-size: 10px;
+  font-weight: 800;
+}
+.pon-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.cust-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intial-name {
+  color: #fff;
+  background: #35c691;
+  width: 35px;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  right: -15%;
+}
+.cus-image-box {
+  position: relative;
+}
+.customer-card-row-box {
+  margin: 20px 0;
+}
+.dt-icn {
+  color: #a5a5a5;
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+}
+.customer-card-row-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.show-txt {
+  font-size: 12px;
+}
+@media only screen and (max-width: 900px) {
+  .customer-card-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .total-page-box {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pagination-container {
+    margin-top: 10px; /* Adjust as needed */
+}
+  .show-txt{
+    font-size: 1rem;
+  }
+  .customer-card-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+.customer-main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.cus-search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-card-row-box {
+  /* Your existing styles for the customer card row */
+}
+
+.total-page-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.pagination-container {
+  /* You can add additional styling for the pagination container if needed */
+ }
+ .active>.page-link{
+  background-color: white !important;
+  color: black !important;
+ }
+ .page-link{
+  background-color: #F3F2F7 !important;
+  color: #202020;
+ }

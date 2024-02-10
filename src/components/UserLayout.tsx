@@ -4,12 +4,12 @@ import Sidebar from "./Users/Sidebar";
 import "../assets/css/layout.css";
 
 const UserLayout = ({ children }) => {
-  const [isClicked, SetIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const handleIsClicked = () => {
-    SetIsClicked(true);
+    setIsClicked(true);
   };
   const handleIsClose = () => {
-    SetIsClicked(false);
+    setIsClicked(false);
   };
   return (
     <div className="layout-container">

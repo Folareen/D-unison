@@ -1,8 +1,4 @@
 import { useState } from "react";
-import "./App.css";
-import "./assets/css/layout.css";
-import "./assets/css/invoice.css";
-// import './assets/css/'
 import {
   BrowserRouter,
   Routes,
@@ -10,48 +6,48 @@ import {
   Navigate,
   Router,
 } from "react-router-dom";
-import Login from "./pages/users/auth/Login";
-import Dashboard from "./pages/providers/main/Dashboard";
-import Signup from "./pages/users/auth/Signup";
-import UserDashboard from "./pages/users/Dashboard";
-import InvoicePage from "./pages/users/Invoice";
-import OrdersPage from "./pages/users/Orders";
-import OrderDetailsPage from "./pages/users/OrderDetails";
-import Customer from "./pages/providers/Customer";
-import SettingsPage from "./pages/users/Settings";
-import ServicePage from "./pages/users/Service";
-import ChatPage from "./pages/users/ChatPage";
+// import Login from "./pages/users/auth/Login";
+// import Dashboard from "./pages/providers/main/Dashboard";
+// import Signup from "./pages/users/auth/Signup";
+// import UserDashboard from "./pages/users/Dashboard";
+// import InvoicePage from "./pages/users/Invoice";
+// import OrdersPage from "./pages/users/Orders";
+// import OrderDetailsPage from "./pages/users/OrderDetails";
+// import Customer from "./pages/providers/Customer";
+// import SettingsPage from "./pages/users/Settings";
+// import ServicePage from "./pages/users/Service";
+// import ChatPage from "./pages/users/ChatPage";
 
-import RatingsPage from "./pages/users/Ratings";
-import AllServices from "./pages/providers/AllServices";
-import Expenses from "./pages/providers/Expenses";
-import Orders from "./pages/providers/Orders";
-import AddExpenses from "./pages/providers/AddExpenses";
-import CreateInvoice from "./pages/providers/CreateInvoice";
-import AddService from "./pages/providers/AddService";
-import AccountSetting from "./pages/providers/AccountSetting";
-import MyRating from "./pages/providers/MyRating";
-import Accounting from "./pages/providers/Accounting";
-import Income from "./pages/providers/Income";
-import Report from "./pages/providers/Report";
-import Chat from "./pages/providers/Chat";
+// import RatingsPage from "./pages/users/Ratings";
+// import AllServices from "./pages/providers/AllServices";
+// import Expenses from "./pages/providers/Expenses";
+// import Orders from "./pages/providers/Orders";
+// import AddExpenses from "./pages/providers/AddExpenses";
+// import CreateInvoice from "./pages/providers/CreateInvoice";
+// import AddService from "./pages/providers/AddService";
+// import AccountSetting from "./pages/providers/AccountSetting";
+// import MyRating from "./pages/providers/MyRating";
+// import Accounting from "./pages/providers/Accounting";
+// import Income from "./pages/providers/Income";
+// import Report from "./pages/providers/Report";
+// import Chat from "./pages/providers/Chat";
 
-import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
-import { AuthProvider } from "./Context/AuthContext";
-import PrivateRoute from "./utils/PrivateRoute";
-import LoginService from "./pages/providers/auth/Login";
-import Forgot from "./pages/providers/auth/forgot";
-import NewPass from "./pages/providers/NewPass";
+// import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
+// import { AuthProvider } from "./Context/AuthContext";
+// import PrivateRoute from "./utils/PrivateRoute";
+// import LoginService from "./pages/providers/auth/Login";
+// import Forgot from "./pages/providers/auth/forgot";
+// import NewPass from "./pages/providers/NewPass";
 
-import Register from "./pages/providers/auth/Register";
-import UsersRoutes from "./routes/UsersRoutes";
+// import Register from "./pages/providers/auth/Register";
+// import UsersRoutes from "./routes/UsersRoutes";
 import ProvidersRoutes from "./routes/ProvidersRoutes";
 
 
 function App() {
   return (
     <BrowserRouter>
-      <UsersRoutes />
+      {/* <UsersRoutes /> */}
       <ProvidersRoutes />
       {/* <Routes>
         <Route path="/users" element={<UsersRoutes />} />

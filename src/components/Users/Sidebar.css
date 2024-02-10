@@ -1,45 +1,49 @@
 /* Sidebar.css */
 
-.sidebar-container{
-  
-}
+.sidebar-container {}
 
 .small-sidber {
   background: #fff;
   min-height: 100vh !important;
   width: 23%;
-  
+
 }
-.nav-bot{
+
+.nav-bot {
   width: 100%;
   height: 15%;
   margin-left: px;
-  
+
 
   border-radius: .5rem;
 }
-.cust{
+
+.cust {
   font-size: 12px;
 }
+
 @media (max-width: 767px) {
   .verify-continer {
     width: 80% !important;
     padding-left: 5%;
-    margin: 0 auto; /* Add this line to center align the container */
-}
-.side-support{
-  margin-left:2rem !important
-}
+    margin: 0 auto;
+    /* Add this line to center align the container */
+  }
 
-  .verify-continer .very-btn{
+  .side-support {
+    margin-left: 2rem !important
+  }
+
+  .verify-continer .very-btn {
     font-size: .8rem;
     text-align: center;
   }
+
   .menu-main-box {
     /* display: none; */
     padding: 20px 0px !important;
     padding-right: 25px !important;
-    
+
   }
 
   .header-sidebar-box {
@@ -51,53 +55,59 @@
     cursor: pointer;
   }
 
-  .icon-drop{
+  .icon-drop {
     margin-left: 2rem;
     font-size: 1.1rem;
-    
+
   }
-  
+
   .menu-main-box.active {
-    display: flex; /* Change from 'block' to 'flex' */
-    flex-direction: column; /* Add this line */
-    align-items: flex-start; /* Add this line */
+    display: flex;
+    /* Change from 'block' to 'flex' */
+    flex-direction: column;
+    /* Add this line */
+    align-items: flex-start;
+    /* Add this line */
   }
 
   /* Add styles for the mobile menu */
   .menu-tab {
-    display: flex; /* Change from 'block' to 'flex' */
+    display: flex;
+    /* Change from 'block' to 'flex' */
     padding: 10px;
     padding-right: 0px;
-    
+
   }
 
   .dro-down-bx {
     padding-left: 10px;
   }
 }
-.sidebar-container {
+
+/* .sidebar-container {
   width: 100% !important;
   box-shadow: 18px 4px 35px 0px rgba(0, 0, 0, 0.02);
   height: 100vh;
   background: #fff;
-}
-.pol-2{
+} */
+.pol-2 {
   width: 25% !important;
 }
 
-.nav-bot{
+.nav-bot {
   width: 70% !important;
   height: 15%;
   margin-left: 15px;
-  
+
 
   border-radius: .5rem;
 }
-.cust{
+
+.cust {
   margin-left: 10px;
   font-size: '12px' !important;
-   margin-left: '13px'; 
-   font-weight:'700';
+  margin-left: '13px';
+  font-weight: '700';
 }
 
 /* Your default styling for the card */
@@ -105,28 +115,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px; /* Adjust this height as needed */
+  height: 40px;
+  /* Adjust this height as needed */
   border: 1px solid #ccc;
   padding: 10px;
-  
+
 }
 
 /* Media query for screens smaller than 50 width */
 @media screen and (max-width: 50em) {
-  
+
   .card-t {
-      height: 60px; /* Adjust this height for smaller screens */
-      flex-direction: column; /* Stack icon and text vertically */
-      text-align: center;
+    height: 60px;
+    /* Adjust this height for smaller screens */
+    flex-direction: column;
+    /* Stack icon and text vertically */
+    text-align: center;
   }
 
   .card-t p {
-      margin-top: 5px; /* Adjust this margin as needed */
+    margin-top: 5px;
+    /* Adjust this margin as needed */
   }
 
-  .nav-bot{
+  .nav-bot {
     width: 300px !important;
   }
 }
-
-

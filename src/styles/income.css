@@ -1,0 +1,53 @@
+.wid-inc {
+  width: 45%;
+}
+.cal-inc-wid {
+  width: 35%;
+}
+.just-new {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.first-row-income {
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.addbrd {
+  border-bottom: 1px solid #ced4da;
+  padding: 10px 0;
+}
+.txt-line-head {
+  font-size: 12px;
+  font-weight: 600;
+  width: 50%;
+}
+.lst-amt-txt {
+  font-size: 10px;
+  color: #6c757d;
+}
+.list-allinocm-box {
+  margin: 10px 0;
+}
+.tst-incrse {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 750px) {
+  .dow-row-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: stretch; /* Each item takes up full width */
+    width: 100%;
+    
+  }
+  .summary-acc-coloum{
+    width: 125% !important;
+   
+
+  }
+  .calender-coloum{
+    width: 80% !important;
+  }
+  
+  }

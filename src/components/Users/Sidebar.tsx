@@ -29,22 +29,22 @@ import { MdWindow } from "react-icons/md";
 import { useState } from "react";
 import { FaGift } from "react-icons/fa6";
 const Sidebar = ({ isClicked, handleIsClose }) => {
-  const [isServiceDrop, SetIsServiceDrop] = useState(false);
-  const [isInvoiceDrop, SetIsInvoiceDrop] = useState(false);
-  const [isAccDrop, SetIsAccDrop] = useState(false);
-  const [isSmall, SetIsSmall] = useState(false);
+  const [isServiceDrop, setIsServiceDrop] = useState(false);
+  const [isInvoiceDrop, setIsInvoiceDrop] = useState(false);
+  const [isAccDrop, setIsAccDrop] = useState(false);
+  const [isSmall, setIsSmall] = useState(false);
   const handleIsSmall = () => {
-    SetIsSmall(!isSmall);
+    setIsSmall(!isSmall);
   };
 
   const handleIsAccDrop = () => {
-    SetIsAccDrop(!isAccDrop);
+    setIsAccDrop(!isAccDrop);
   };
   const handleIsInvoiceDrop = () => {
-    SetIsInvoiceDrop(!isInvoiceDrop);
+    setIsInvoiceDrop(!isInvoiceDrop);
   };
   const handleIsSerDrop = () => {
-    SetIsServiceDrop(!isServiceDrop);
+    setIsServiceDrop(!isServiceDrop);
   };
   return (
     <div

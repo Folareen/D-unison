@@ -9,7 +9,7 @@ import {
 } from "cdbreact";
 import { NavLink } from "react-router-dom";
 import { IoIosSpeedometer } from "react-icons/io";
-import "../../../assets/css/dash.css";
+
 const Sidebar = () => {
   return (
     <div

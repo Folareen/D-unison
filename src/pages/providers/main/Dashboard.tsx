@@ -1,5 +1,5 @@
-import "../../../assets/css/dash.css";
-import user_logo from "../../assets/user_logo.png";
+import "../../../styles/dash.css";
+import user_logo from "../../assets/images/user_logo.png";
 import Layout from "../../../components/Layout";
 import { IoCalendarClear, IoChevronDown } from "react-icons/io5";
 import RecAdx from "../../../components/Services/SmallComponent/recAdx";
@@ -12,7 +12,8 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { GoBell } from "react-icons/go";
 import { LuMessageSquareDashed } from "react-icons/lu";
 import { IoMenu } from "react-icons/io5";
-import { FaStar } from "react-icons/fa";
+import { FaChevronDown, FaStar, FaUndo } from "react-icons/fa";
+import { HiOutlineFunnel } from "react-icons/hi2";
 
 const data = [
   { img: "/images/l3.png", count: 75, for: "Total Customers" },
@@ -24,56 +25,45 @@ const data = [
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <Layout>
+      <Layout page="Dashboard">
         <div className="main-contaner">
           <div className="greeting-fiter-container flex justify-between mb-3">
-            <div className="greet-bx d-none d-lg-block">
-              <h6>
-                <b>Dashboard</b>
-              </h6>
-              <div className="txt-grt">
-                Hi, Samantha. Welcome back to your Service Dashboard!
-              </div>
-            </div>
 
-            <div className="icons-box flex ">
-              <div className="each-icon flex">
-                <GoBell />
-                <div className="counter-box flex">21</div>
-              </div>
-              <div className="each-icon flex">
-                <LuMessageSquareDashed />
-                <div className="counter-box flex">53</div>
-              </div>
-              <div
-                className="each-icon flex"
-                style={{ backgroundColor: "rgba(94, 108, 147, 0.15)" }}
-              >
-                <FaStar />
-                <div
-                  className="counter-box flex"
-                  style={{ backgroundColor: "#5E6C93" }}
-                >
-                  15
+            <div className="greet-cont">
+              <div className="greet-bx d-none d-lg-block">
+                <h6>
+                  Dashboard
+                </h6>
+                <div className="txt-grt">
+                  Hi, Samantha. Welcome back to your Service Dashboard!
                 </div>
               </div>
-              <div
-                className="each-icon  flex"
-                style={{
-                  color: "#FF5B5B",
-                  backgroundColor: "rgba(255, 91, 91, 0.15)",
-                }}
-              >
-                <AiOutlineSetting />
-                <div
-                  className="counter-box flex"
-                  style={{ backgroundColor: "#FF5B5B" }}
-                >
-                  19
+              <div className="filter-cont">
+                <div className="filter-btn">
+                  <div>
+                    <HiOutlineFunnel size={24} />
+                  </div>
                 </div>
+                <div className="filter-btn">
+                  <div>
+                    Filter By
+                  </div>
+                </div>
+                <button className="filter-btn ">
+                  <div style={{ marginRight: '20px' }}>
+                    Date
+                  </div>
+                  <FaChevronDown />
+                </button>
+                <button className="filter-btn" style={{ borderTopRightRadius: '20px', borderBottomRightRadius: '20px' }}>
+                  <FaUndo color="#EA0234" size={18} />
+                  <div style={{ color: "#EA0234", marginLeft: '8px' }}>
+                    Reset Filter
+                  </div>
+                </button>
               </div>
-            </div>
 
+            </div>
 
 
             <div className="d-lg-none">
@@ -137,7 +127,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="slidw-box">
-            {/* <SliderBox /> */}
+            <SliderBox />
           </div>
         </div>
       </Layout>

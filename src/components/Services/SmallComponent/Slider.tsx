@@ -63,46 +63,47 @@ const SliderBox = () => {
           </div>
         </div>
 
-        <div className="slider-contar">
-          <div className="card-row-box-slide flex justify-center">
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={2.5}
-              ref={SlideRef}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                390: {
-                  slidesPerView: 1,
-                },
-                502: {
-                  slidesPerView: 1,
-                },
-                802: {
-                  slidesPerView: 2,
-                },
-                992: {
-                  slidesPerView: 2,
-                },
-                1200: {
-                  slidesPerView: 2,
-                },
-              }}
-            >
-              <SwiperSlide>
-                <CardCol />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardCol />
-              </SwiperSlide>
-              <SwiperSlide>
-                <CardCol />
-              </SwiperSlide>
-            </Swiper>
-            {/* <CardCol data={1} />
+      </div>
+      <div className="slider-contar">
+        <div className="card-row-box-slide flex justify-center">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={2.5}
+            ref={SlideRef}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              390: {
+                slidesPerView: 1,
+              },
+              502: {
+                slidesPerView: 1,
+              },
+              802: {
+                slidesPerView: 2,
+              },
+              992: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 2,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <CardCol />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CardCol />
+            </SwiperSlide>
+            <SwiperSlide>
+              <CardCol />
+            </SwiperSlide>
+          </Swiper>
+          {/* <CardCol data={1} />
 
       <div
         className="slider-contar"
@@ -111,14 +112,13 @@ const SliderBox = () => {
       >
         <div className="card-row-box-slide flex" style={{ transform: `translateX(-${scrollPosition}px)` }}>
           {/* Add more CardCol components here */}
-            <CardCol data={1} />
-            <CardCol />
+          <CardCol data={1} />
+          <CardCol />
 
-            <CardCol />
-            <CardCol />
-            <CardCol />
-            <CardCol />
-          </div>
+          <CardCol />
+          <CardCol />
+          <CardCol />
+          <CardCol />
         </div>
       </div>
     </div>
