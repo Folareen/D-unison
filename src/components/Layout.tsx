@@ -1,21 +1,16 @@
 import Navbar from "./Services/Navbar";
 import Sidebar from "./Services/Sidebar";
-import "../assets/css/layout.css";
-import { useState } from "react";
+import "../styles/layout.css";
+import React, { useState } from "react";
 
-const Layout = ({ children }) => {
-  const [isClicked, SetIsClicked] = useState(false);
-  const handleIsClicked = () => {
-    SetIsClicked(true);
-  };
-  const handleIsClose = () => {
-    SetIsClicked(false);
-  };
+const Layout = ({ children, page }: { children: React.ReactNode, page: string }) => {
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
     <div className="layout-container">
-      <Sidebar isClicked={isClicked} handleIsClose={handleIsClose} />
-      <div className="nav-main-box">
-        <Navbar handleIsClicked={handleIsClicked} />
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} page={page} />
+      <div className="main-box">
         {children}
       </div>
     </div>

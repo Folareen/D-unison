@@ -1,6 +1,5 @@
-import { NavLink } from "react-router-dom";
-import "../../assets/css/layout.css";
-import { IoIosSpeedometer, IoMdClose } from "react-icons/io";
+import { NavLink, useLocation } from "react-router-dom";
+import { IoIosClose, IoIosSpeedometer, IoMdClose } from "react-icons/io";
 import {
   IoMenu,
   IoCalendarClear,
@@ -13,91 +12,84 @@ import {
   FaFileInvoiceDollar,
   FaChevronRight,
   FaChevronDown,
+  FaChevronUp,
 } from "react-icons/fa";
 import { MdWindow } from "react-icons/md";
 import { useState } from "react";
-const Sidebar = ({ isClicked, handleIsClose }) => {
-  const [isServiceDrop, SetIsServiceDrop] = useState(false);
-  const [isInvoiceDrop, SetIsInvoiceDrop] = useState(false);
-  const [isAccDrop, SetIsAccDrop] = useState(false);
-  const [isSmall, SetIsSmall] = useState(false);
-  const handleIsSmall = () => {
-    SetIsSmall(!isSmall);
-  };
+import dunlogo from '../../assets/images/dunlogo.png'
+import { AiFillDashboard } from "react-icons/ai";
+import { BsGridFill } from "react-icons/bs";
+
+const Sidebar = ({ showSidebar, setShowSidebar }: { showSidebar: boolean, setShowSidebar: React.Dispatch<React.SetStateAction<boolean>> }) => {
+  const [isServiceDrop, setIsServiceDrop] = useState(false);
+  const [isInvoiceDrop, setIsInvoiceDrop] = useState(false);
+  const [isAccDrop, setIsAccDrop] = useState(false);
 
   const handleIsAccDrop = () => {
-    SetIsAccDrop(!isAccDrop);
+    setIsAccDrop(!isAccDrop);
   };
   const handleIsInvoiceDrop = () => {
-    SetIsInvoiceDrop(!isInvoiceDrop);
+    setIsInvoiceDrop(!isInvoiceDrop);
   };
   const handleIsSerDrop = () => {
-    SetIsServiceDrop(!isServiceDrop);
+    setIsServiceDrop(!isServiceDrop);
   };
+
   return (
     <div
-      className={
-        isSmall
-          ? `small-sidber`
-          : isClicked
-            ? `sidebar-container`
-            : "small-sidber"
-      }
+      className={`sidebar-container ${!showSidebar && 'hide-sidebar'}`}
     >
       <div className="header-sidebar-box d-flex ">
         <img
-          src="/images/dunlogo.png"
+          src={dunlogo}
           alt=""
-          className={isSmall ? `niln` : ""}
         />
-        <div className="name-im">
-          <img
-            src="images/duname.png"
-            alt=""
-            className={isSmall ? `niln` : ""}
-          />
-        </div>
-        <IoMenu className="lo-icon" onClick={handleIsSmall} />
-        <IoMdClose className="cls-icon" onClick={handleIsClose} />
+        <h1 className="">
+          D-unison
+        </h1>
+        {/* <IoMenu className="lo-icon" onClick={handleIsSmall} /> */}
+        <button onClick={() => {
+          setShowSidebar(false)
+        }} className="sidebar-btn">
+          <IoIosClose size={28} />
+        </button>
       </div>
       <div className="menu-main-box">
-        <div className={isSmall ? `niln ` : "ma-txt"}></div>
         <div className="all-menu">
           <NavLink
-            to="/service-dash"
+            to="/providers/dashboard"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
-              <IoIosSpeedometer className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Dashboard</span>
+              <AiFillDashboard className="nav-con" />
+              <span className='' >Dashboard</span>
             </div>
           </NavLink>
           <div className="drop-container">
             <div className={"menu-tab flex"} onClick={handleIsSerDrop}>
               <div className="icon-drop flex">
-                <MdWindow className="nav-con" />
-                <span className={isSmall ? `niln` : ""}>Services</span>
+                <BsGridFill className="nav-con" />
+                <span className={''}>Services</span>
               </div>
               {isServiceDrop ? (
-                <FaChevronDown className="icon-down" />
+                <FaChevronUp className="icon-down" />
               ) : (
-                <FaChevronRight className={isSmall ? `niln` : "icon-down"} />
+                <FaChevronDown className="icon-down" />
               )}
             </div>
             {isServiceDrop && (
               <div className="dro-down-bx">
                 <NavLink
-                  exact
-                  to="/all-services"
+                  to="/providers/my-service"
                   className={({ isActive }) =>
                     isActive ? "active-link menu-tab flex" : "menu-tab flex"
                   }
                 >
                   <div className="drop-item">My Service</div>
                 </NavLink>
-                <NavLink exact to="/add-service" className={({ isActive }) =>
+                <NavLink to="/providers/add-service" className={({ isActive }) =>
                   isActive ? "active-link menu-tab flex" : "menu-tab flex"
                 }>
                   <div className="drop-item">Add Service</div>
@@ -106,75 +98,75 @@ const Sidebar = ({ isClicked, handleIsClose }) => {
             )}
           </div>
           <NavLink
-            to="/order-services"
+            to="/providers/orders"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
               <IoCalendarClear className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Orders</span>
+              <span className={''}>Orders</span>
             </div>
           </NavLink>
           <NavLink
-            to="/chat"
+            to="/providers/chat"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
               <IoChatbubbles className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Chat</span>
+              <span className={''}>Chat</span>
             </div>
           </NavLink>
           <NavLink
-            to="/customer"
+            to="/providers/customers"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
               <FaAddressBook className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Customers</span>
+              <span className={''}>Customers</span>
             </div>
 
           </NavLink>
           <NavLink
-            to="/myrating"
+            to="/providers/my-rating"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
               <FaStar className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>My Rating</span>
+              <span className={''}>My Rating</span>
             </div>
 
           </NavLink>
+
           <div className="drop-container">
             <div className={"menu-tab flex"} onClick={handleIsInvoiceDrop}>
               <div className="icon-drop flex">
                 <FaFileInvoiceDollar className="nav-con" />
-                <span className={isSmall ? `niln` : ""}>Invoice</span>
+                <span className={''}>Invoice</span>
               </div>
               {isInvoiceDrop ? (
-                <FaChevronDown className="icon-down" />
+                <FaChevronUp className="icon-down" />
               ) : (
-                <FaChevronRight className={isSmall ? `niln` : "icon-down"} />
+                <FaChevronDown className="icon-down" />
               )}
             </div>
             {isInvoiceDrop && (
               <div className="dro-down-bx">
                 <NavLink
-                  exact
-                  to="/create-invoice"
+                  to="/providers/my-invoices"
                   className={({ isActive }) =>
                     isActive ? "active-link menu-tab flex" : "menu-tab flex"
                   }
                 >
                   <div className="drop-item">My Invoices</div>
                 </NavLink>
-                <NavLink to="/create-invoice" className={({ isActive }) =>
+                <NavLink to="/providers/create-invoice" className={({ isActive }) =>
                   isActive ? "active-link menu-tab flex" : "menu-tab flex"
                 }>
                   <div className="drop-item">Create invoice</div>
@@ -183,31 +175,61 @@ const Sidebar = ({ isClicked, handleIsClose }) => {
             )}
           </div>
 
-          <NavLink
-            to="/accounting"
-            className={({ isActive }) =>
-              isActive ? "active-link menu-tab flex" : "menu-tab flex"
-            }
-          >
-            <div className="icon-drop flex">
-              <MdWindow className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Accounting</span>
+
+          <div className="drop-container">
+            <div className={"menu-tab flex"} onClick={handleIsAccDrop}>
+              <div className="icon-drop flex">
+                <BsGridFill className="nav-con" />
+                <span className={''}>Accounting</span>
+              </div>
+              {isAccDrop ? (
+                <FaChevronUp className="icon-down" />
+              ) : (
+                <FaChevronDown className="icon-down" />
+              )}
             </div>
-          </NavLink>
+            {isAccDrop && (
+              <div className="dro-down-bx">
+                <NavLink
+                  to="/providers/accounting-dashboard"
+                  className={({ isActive }) =>
+                    isActive ? "active-link menu-tab flex" : "menu-tab flex"
+                  }
+                >
+                  <div className="drop-item">Dashboard</div>
+                </NavLink>
+                <NavLink to="/providers/income" className={({ isActive }) =>
+                  isActive ? "active-link menu-tab flex" : "menu-tab flex"
+                }>
+                  <div className="drop-item">Income</div>
+                </NavLink>
+                <NavLink to="/providers/expenses" className={({ isActive }) =>
+                  isActive ? "active-link menu-tab flex" : "menu-tab flex"
+                }>
+                  <div className="drop-item">Expenses</div>
+                </NavLink>
+                <NavLink to="/providers/report" className={({ isActive }) =>
+                  isActive ? "active-link menu-tab flex" : "menu-tab flex"
+                }>
+                  <div className="drop-item">Report</div>
+                </NavLink>
+              </div>
+            )}
+          </div>
 
           <NavLink
-            to="/acc-setting"
+            to="/providers/settings"
             className={({ isActive }) =>
               isActive ? "active-link menu-tab flex" : "menu-tab flex"
             }
           >
             <div className="icon-drop flex">
               <IoSettings className="nav-con" />
-              <span className={isSmall ? `niln` : ""}>Settings</span>
+              <span className={''}>Settings</span>
             </div>
           </NavLink>
         </div>
-        <div className={isSmall ? `niln` : "verify-continer flex mt-5"}>
+        <div className={"verify-continer flex mt-5"}>
           <div className="left-cnt">
             Get more Orders when your freelance Account is Verified
             <div className="very-btn mt-2">Verify My Account</div>
