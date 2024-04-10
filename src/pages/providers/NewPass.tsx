@@ -1,4 +1,4 @@
-import "../../assets/css/login.css";
+import "../../styles/auth.css";
 import forgot from "../../assets/setpass.png";
 import forgot_pc from "../../assets/setpass-pc.png";
 import { FaEye } from "react-icons/fa6";

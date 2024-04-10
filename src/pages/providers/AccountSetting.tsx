@@ -1,4 +1,4 @@
-import "../../assets/css/accountsetting.css";
+import "../../styles/accountsetting.css";
 import Layout from "../../components/Layout";
 import { FaAngleDown, FaRegCalendarDays, FaRegEyeSlash } from "react-icons/fa6";
 import { CiLock } from "react-icons/ci";
@@ -65,7 +65,7 @@ const AccountSetting = () => {
                     <FaAngleDown />
                   </div>
                 </div>
-                
+
                 <div className="innp-labal-box full-bx">
                   {/* check invoice.css its style */}
                   <label htmlFor="" className="label-fil">

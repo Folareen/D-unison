@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Users/Navbar";
 import Sidebar from "./Users/Sidebar";
-import "../assets/css/layout.css";
+import "../styles/layout.css";
 
 const UserLayout = ({ children }) => {
   const [isClicked, setIsClicked] = useState(false);

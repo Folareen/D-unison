@@ -1,11 +1,11 @@
 import Layout from "../../components/Layout";
 import { MdDateRange } from "react-icons/md";
-import "../../assets/css/income.css";
+import "../../styles/income.css";
 import { IoSettingsSharp } from "react-icons/io5";
-import SummaryDownCard from "../../components/Services/SummaryDownCard";
-import CalenderCard from "../../components/Services/CalenderCard";
-import SmallExpCard from "../../components/Services/SmallExpCard";
-import IncomeTopCard from "../../components/Services/IncomeTopCard";
+import SummaryDownCard from "../../components/Providers/SummaryDownCard";
+import CalenderCard from "../../components/Providers/CalenderCard";
+import SmallExpCard from "../../components/Providers/SmallExpCard";
+import IncomeTopCard from "../../components/Providers/IncomeTopCard";
 
 const data = [
   {

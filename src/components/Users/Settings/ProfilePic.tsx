@@ -1,13 +1,13 @@
 import profile from "../../../assets/profile.png";
 
-const ProfilePic =()=>{
+const ProfilePic = () => {
 
-    return(
+    return (
         <div className="">
-        <div class="text-center">
-            <p style={{color:'#2F80ED'}}>Submitted documents</p>
-  <img src={profile} class="rounded" alt="..."/>
-</div>
+            <div className="text-center">
+                <p style={{ color: '#2F80ED' }}>Submitted documents</p>
+                <img src={profile} className="rounded" alt="..." />
+            </div>
         </div>
     )
 

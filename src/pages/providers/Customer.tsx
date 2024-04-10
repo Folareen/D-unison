@@ -1,8 +1,8 @@
 import Layout from "../../components/Layout";
-import "../../assets/css/customer.css";
+import "../../styles/customer.css";
 import { FiSearch } from "react-icons/fi";
-import CustomerCard from "../../components/Services/CustomerCard";
-import PaginationBox from "../../components/Services/SmallComponent/Pagination";
+import CustomerCard from "../../components/Providers/CustomerCard";
+import PaginationBox from "../../components/Providers/SmallComponent/Pagination";
 
 const Customer = () => {
   return (
@@ -33,14 +33,14 @@ const Customer = () => {
             <CustomerCard />
             <CustomerCard />
             <CustomerCard />
-            
+
           </div>
           <div className="total-page-box">
             <div className="show-txt">
               Showing <b>1-10</b> from <b>46</b> data
             </div>
             <div className="pagination-container">
-              { <PaginationBox  /> }
+              {<PaginationBox />}
             </div>
           </div>
         </div>

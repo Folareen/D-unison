@@ -1,8 +1,8 @@
 import Layout from "../../components/Layout";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
-import "../../assets/css/report.css";
-import ChartCardAcc from "../../components/Services/ChartCardAcc";
+import "../../styles/report.css";
+import ChartCardAcc from "../../components/Providers/ChartCardAcc";
 
 const Report = () => {
   return (

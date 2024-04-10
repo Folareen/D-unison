@@ -1,4 +1,4 @@
-import "../assets/css/modal.css";
+import "../styles/modal.css";
 const SelectModal = ({ category, selectedCategory, onCategoryChange }) => {
   const handleCategoryClick = (selectedCategory) => {
     onCategoryChange(selectedCategory);
@@ -9,9 +9,8 @@ const SelectModal = ({ category, selectedCategory, onCategoryChange }) => {
       {category.map((item, index) => (
         <div
           key={index}
-          className={`each-item-sel ${
-            selectedCategory === item ? "selected" : ""
-          }`}
+          className={`each-item-sel ${selectedCategory === item ? "selected" : ""
+            }`}
           onClick={() => handleCategoryClick(item)}
         >
           {item}

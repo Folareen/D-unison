@@ -1,9 +1,9 @@
 import Layout from "../../components/Layout";
 import { MdDateRange } from "react-icons/md";
-import "../../assets/css/expenses.css";
+import "../../styles/expenses.css";
 import { IoSettingsSharp } from "react-icons/io5";
-import SmallExpCard from "../../components/Services/SmallExpCard";
-import ReportSmall from "../../components/Services/SmallComponent/ReportSmall";
+import SmallExpCard from "../../components/Providers/SmallExpCard";
+import ReportSmall from "../../components/Providers/SmallComponent/ReportSmall";
 
 const Expenses = () => {
   return (

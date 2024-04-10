@@ -1,5 +1,5 @@
-import "../../../assets/css/login.css";
-import login from "../../../assets/serv-signin.png";
+import "../../../styles/auth.css";
+import login from "../../../assets/images/serv-signin.png";
 import { FaRegCalendarDays, FaEye } from "react-icons/fa6";
 import { CiLock } from "react-icons/ci";
 import { Link } from "react-router-dom";

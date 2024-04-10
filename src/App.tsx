@@ -42,12 +42,13 @@ import {
 // import Register from "./pages/providers/auth/Register";
 // import UsersRoutes from "./routes/UsersRoutes";
 import ProvidersRoutes from "./routes/ProvidersRoutes";
+import UsersRoutes from "./routes/UsersRoutes";
 
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <UsersRoutes /> */}
+      <UsersRoutes />
       <ProvidersRoutes />
       {/* <Routes>
         <Route path="/users" element={<UsersRoutes />} />

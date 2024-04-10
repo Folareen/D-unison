@@ -1,5 +1,5 @@
 import UserLayout from "../../components/UserLayout";
-import "../../assets/css/chat.css";
+import "../../styles/chat.css";
 import { FiChevronDown } from "react-icons/fi";
 import { RiAttachmentLine } from "react-icons/ri";
 import { BsFillSendFill } from "react-icons/bs";
@@ -17,16 +17,15 @@ const ChatPage = () => {
     setShowSecondColumn(false);
   };
 
-  
+
   return (
     <div className="expense-container">
       <UserLayout>
         <div className="expense-box-cont">
           <div className="dow-row-container flex new-row-cat">
             <div
-              className={`chat-first-coloum ${
-                showSecondColumn ? " hidden" : "visible"
-              }`}
+              className={`chat-first-coloum ${showSecondColumn ? " hidden" : "visible"
+                }`}
             >
               <div className="mess-count-box flex">
                 <div className="mess-txt">Messages</div>
@@ -34,7 +33,7 @@ const ChatPage = () => {
                 <div className="count-mes">12</div>
               </div>
               <div className="search-chat-box">
-                <div className="sear-tst"><CiSearch/></div>
+                <div className="sear-tst"><CiSearch /></div>
                 <input
                   type="text"
                   className="sear-inp-bx"
@@ -117,9 +116,8 @@ const ChatPage = () => {
               </div>
             </div>
             <div
-              className={`chat-sencond-coloum ${
-                showSecondColumn ? "visible" : "hidden"
-              }`}
+              className={`chat-sencond-coloum ${showSecondColumn ? "visible" : "hidden"
+                }`}
             >
               <div className="profil-vist-mess flex mainc">
                 <IoMdArrowRoundBack
@@ -268,7 +266,7 @@ const ChatPage = () => {
 
 
               </div>
-              
+
               <div className="send-mess-box flex">
                 <RiAttachmentLine className="icn" />
                 <div className="sen-input-main-cont flex">

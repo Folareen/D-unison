@@ -1,10 +1,10 @@
 import Layout from "../../components/Layout";
-import "../../assets/css/allservice.css";
+import "../../styles/allservice.css";
 import { IoSearch, IoSettingsSharp } from "react-icons/io5";
-import ServiceCard from "../../components/Services/ServiceCard";
+import ServiceCard from "../../components/Providers/ServiceCard";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import PaginationBox from "../../components/Services/SmallComponent/Pagination";
+import PaginationBox from "../../components/Providers/SmallComponent/Pagination";
 
 const AllServices = () => {
   const [isDraft, setIsDraft] = useState(false);
@@ -25,7 +25,7 @@ const AllServices = () => {
               <b>My services</b>
             </h6>
             <Link to="/add-service">
-            <button className="add-new-btn">Add New</button>
+              <button className="add-new-btn">Add New</button>
             </Link>
           </div>
           <div className="search-filter-box ">
@@ -41,7 +41,7 @@ const AllServices = () => {
               <button className="search-all-btn">
                 <IoSearch />
               </button>
-              
+
             </div>
             <div className="filtr-main-box serv-mob d-flex justify-content-center align-items-center flex">
               <div className="switch-filter-box">
@@ -67,70 +67,70 @@ const AllServices = () => {
           {isDraft && (
             <div className="">
               <div className="">
-              <div className="container">
-            <div className="row">
-              <div className="col-12 col-lg-4">
-              <ServiceCard />
-               
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-lg-4">
+                      <ServiceCard />
 
+
+                    </div>
+                    <div className="col-12 col-lg-4">
+                      <ServiceCard />
+
+
+                    </div>
+                    <div className="col-12 col-lg-4">
+                      <ServiceCard />
+
+
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
-              <div className="col-12 col-lg-4">
-              <ServiceCard />
-               
 
-              </div>
-              <div className="col-12 col-lg-4">
-              <ServiceCard />
-               
-
-              </div>
-
-            </div>
-
-          </div>
-              </div>
-              
             </div>
           )}
           {!isDraft && (
             <div className="">
               <div className="">
-              <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-4">
-              <ServiceCard />
-               
+                <div className="container">
+                  <div className="row">
+                    <div className="col-12 col-md-6 col-lg-4">
+                      <ServiceCard />
 
+
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-4">
+                      <ServiceCard />
+
+
+                    </div>
+                    <div className="col-12 col-md-6 col-lg-4">
+                      <ServiceCard />
+
+
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
-              <div className="col-12 col-md-6 col-lg-4">
-              <ServiceCard />
-               
 
-              </div>
-              <div className="col-12 col-md-6 col-lg-4">
-              <ServiceCard />
-               
-
-              </div>
-
-            </div>
-
-          </div>
-              </div>
-              
             </div>
           )}
 
-<div className="total-page-box">
+          <div className="total-page-box">
             <div className="show-txt mx-4">
               Showing <b>1-10</b> from <b>46</b> data
             </div>
             <div className="pagination-container mx-4">
-              { <PaginationBox  /> }
+              {<PaginationBox />}
             </div>
           </div>
 
-         
+
         </div>
       </Layout>
     </div>

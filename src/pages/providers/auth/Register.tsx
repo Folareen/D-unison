@@ -1,4 +1,4 @@
-import "../../assets/css/login.css";
+import "../../styles/auth.css";
 import { FaEye } from "react-icons/fa6";
 import { CiLock } from "react-icons/ci";
 const Register = () => {

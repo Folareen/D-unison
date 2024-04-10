@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout";
-import "../../assets/css/addservice.css";
+import "../../styles/addservice.css";
 import { GiSelfLove } from "react-icons/gi";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { FaAngleDown } from "react-icons/fa6";

@@ -1,16 +1,16 @@
-// import "../../../assets/css/login.css";
+// import "../../../styles/auth.css";
 import { FaRegCalendarDays, FaEye } from "react-icons/fa6";
 import { CiLock } from "react-icons/ci";
-import signup from "../../../assets/signup.png";
+import signup from "../../../assets/images/signup.png";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div className="login-container flex">
+    <div className="auth-container flex">
 
       <div className="col-md-6 d-md-none  p-0 " style={{ backgroundColor: '' }}>
         <div className="text-center">
-          <img src={signup} alt="Login image-fluid m" className=" img-fluid rounded-circle" style={{
+          <img src={signup} alt="auth image-fluid m" className=" img-fluid rounded-circle" style={{
             backgroundColor: 'rgba(64, 123, 255, 0.2)', objectFit: 'cover', objectPosition: 'left', zIndex: -1, marginTop: '', maxWidth: '60%', // Set the maximum width of the image
             maxHeight: '309px', marginBottom: ''
           }} />
@@ -21,8 +21,8 @@ const Signup = () => {
         </div>
       </div>
 
-      <div className="left-login-box">
-        <div className="login-top-txt mt-3">Create your Account</div>
+      <div className="left-auth-box">
+        <div className="auth-top-txt mt-3">Create your Account</div>
         <div className="wel-bdy">
           Start offering services
         </div>
@@ -112,16 +112,16 @@ const Signup = () => {
 
           <div className="dont-have">
             You have an account?
-            <span className="link-forgot"><a href="/user/login" className="" style={{ marginLeft: '3px' }}>LOG IN</a></span>
+            <span className="link-forgot"><a href="/user/auth" className="" style={{ marginLeft: '3px' }}>LOG IN</a></span>
           </div>
         </form>
       </div>
 
 
-      <div className=" right-login-box d-flex justify-content-center align-items-center">
+      <div className=" right-auth-box d-flex justify-content-center align-items-center">
 
         <div className="rounded-circle p-2 " style={{ background: 'linear-gradient(#444CE7CF, #00000000)' }}>
-          <img src={signup} style={{ width: '400px', height: '400px', borderRadius: '50%' }} className="img-fluid" alt="Login" />
+          <img src={signup} style={{ width: '400px', height: '400px', borderRadius: '50%' }} className="img-fluid" alt="auth" />
         </div>
 
       </div>

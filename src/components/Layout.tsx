@@ -1,5 +1,5 @@
-import Navbar from "./Services/Navbar";
-import Sidebar from "./Services/Sidebar";
+import Navbar from "./Providers/Navbar";
+import Sidebar from "./Providers/Sidebar";
 import "../styles/layout.css";
 import React, { useState } from "react";
 

@@ -1,4 +1,4 @@
-import "../../assets/css/login.css";
+import "../../styles/auth.css";
 import forgot from "../../assets/forgot.png";
 import forgot_pc from "../../assets/forgot-pc.png";
 import { FaRegCalendarDays, FaEye } from "react-icons/fa6";

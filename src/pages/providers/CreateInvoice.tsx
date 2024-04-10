@@ -1,6 +1,6 @@
 import { IoIosPerson } from "react-icons/io";
 import Layout from "../../components/Layout";
-import "../../assets/css/invoice.css";
+import "../../styles/invoice.css";
 import { FcCalendar } from "react-icons/fc";
 import { FiFilePlus } from "react-icons/fi";
 import { FaRegCalendarDays, FaAngleDown } from "react-icons/fa6";

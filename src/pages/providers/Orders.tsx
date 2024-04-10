@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 import { IoSearch, IoSettingsSharp } from "react-icons/io5";
-import "../../assets/css/orders.css";
+import "../../styles/orders.css";
 
 const Orders = () => {
   return (
@@ -16,7 +16,7 @@ const Orders = () => {
           <div className="search-filter-box ">
             <div className="search-service-box">
               <div className="search-serv-input flex">
-               
+
                 <input
                   type="text"
                   className="inp-all-serv"

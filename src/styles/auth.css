@@ -1,0 +1,247 @@
+.log-pw input {
+  font-size: 40px !important;
+}
+
+.log-pw input::placeholder {
+  font-size: 18px !important;
+}
+
+.innp-labal-box {
+  width: 100% !important;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: 'Montserrat';
+}
+
+.left-auth-box {
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-inner-box {
+  width: 70%;
+  margin: auto;
+}
+
+.right-auth-box {
+  background: #407bff;
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile-login-img {
+  display: none;
+}
+
+.auth-heading {
+  font-size: 40px;
+}
+
+.auth-heading-extra {
+  color: #71717A;
+  font-size: 20px;
+}
+
+.auth-divider {
+  width: 25%;
+}
+
+.auth-divider-text {
+  font-weight: 500;
+  font-size: 15px;
+  color: #71717A;
+  width: 40%;
+  text-align: center;
+}
+
+.auth-top-txt {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.wel-bdy,
+.wel-txt-hr {
+  font-size: 12px;
+  font-weight: 700;
+  color: #71717a;
+}
+
+.hr-wel-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.wel-txt-hr {
+  position: absolute;
+  top: 0;
+  background: #f5f8ff;
+  left: 30%;
+}
+
+.aut-form {
+  margin-top: 60px;
+}
+
+.rei-aut {
+  margin-top: 10px !important;
+}
+
+.aut-inp {
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.wid-aut {
+  width: 100%;
+}
+
+.rem-txt {
+  font-size: 11px;
+  font-weight: 600;
+  color: #71717a;
+}
+
+.link-forgot {
+  font-size: 13px;
+  font-weight: 700;
+  color: #407bff;
+  cursor: pointer;
+}
+
+.log-btn {
+  border: none;
+  width: 100%;
+  background: #407bff;
+  height: 40px;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 800;
+  margin: 40px 0 20px;
+}
+
+.res-btn {
+  margin: 10px 0 !important;
+}
+
+.rember-forgot {
+  margin: 10px 0;
+}
+
+.avail {
+  text-align: left;
+  font-size: 10px;
+  color: #437c41;
+}
+
+.warn-pass {
+  text-align: left;
+}
+
+.aree-txt {
+  font-size: 10px;
+}
+
+.aree-txt span {
+  color: #407bff;
+}
+
+.agree-bx {
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #407bff;
+  --web-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 12px;
+  color: #fff;
+  display: none;
+  padding: 1px;
+}
+
+input[type="checkbox"]:hover {
+  background: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background: #407bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+input[type="checkbox"]:checked::after {
+  display: initial;
+}
+
+@media (max-width: 900px) {
+
+  .auth-container {
+    display: block;
+  }
+
+  .left-auth-box {
+    width: 100%;
+    min-height: unset;
+  }
+
+  .right-auth-box {
+    width: 100%;
+  }
+
+  .mobile-login-img {
+    display: block;
+  }
+
+  .right-auth-box,
+  .welc {
+    display: none !important;
+  }
+
+  .auth-heading {
+    color: #2A4ECA;
+    font-family: 'Poppins';
+    font-size: 25px;
+  }
+
+  .auth-divider {
+    display: none;
+  }
+
+  .log-inp input {
+    font-size: 13px !important;
+  }
+
+  input[type="password"] {
+    font-family: caption;
+    font-size: 20px !important;
+  }
+
+}

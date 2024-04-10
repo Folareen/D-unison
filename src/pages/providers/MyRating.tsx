@@ -2,8 +2,8 @@ import { BsFillSendFill } from "react-icons/bs";
 import { useState } from "react";
 import Layout from "../../components/Layout";
 import { IoSearch, IoSettingsSharp } from "react-icons/io5";
-import RateCard from "../../components/Services/RateCard";
-import "../../assets/css/myrating.css";
+import RateCard from "../../components/Providers/RateCard";
+import "../../styles/myrating.css";
 import { FaStar } from "react-icons/fa";
 import { IoMdHappy, IoMdArrowRoundBack } from "react-icons/io";
 
@@ -36,7 +36,7 @@ const MyRating = () => {
           <div className="search-filter-box ">
             <div className="search-service-box">
               <div className="search-serv-input flex">
-                
+
                 <input
                   type="text"
                   className="inp-all-serv"
@@ -47,37 +47,35 @@ const MyRating = () => {
                 <IoSearch />
               </button>
             </div>
-           <div className={` ${
-                showSecondColumn ? "hidden" : "visible"
+            <div className={` ${showSecondColumn ? "hidden" : "visible"
               }`}>
-           <div className="filtr-main-box flex" >
-              <div className="switch-filter-box">
-                <div
-                  className={isDraft ? `each-filter` : `each-filter  filt-act`}
-                  onClick={handleIsDraftClose}
-                >
-                  Read
+              <div className="filtr-main-box flex" >
+                <div className="switch-filter-box">
+                  <div
+                    className={isDraft ? `each-filter` : `each-filter  filt-act`}
+                    onClick={handleIsDraftClose}
+                  >
+                    Read
+                  </div>
+                  <div
+                    className={isDraft ? `each-filter filt-act` : `each-filter `}
+                    onClick={handleIsDraft}
+                  >
+                    Unread
+                  </div>
                 </div>
-                <div
-                  className={isDraft ? `each-filter filt-act` : `each-filter `}
-                  onClick={handleIsDraft}
-                >
-                  Unread
+                <div className="filt-sett flex">
+                  <div className="fit-txt">Filter</div>
+                  <IoSettingsSharp />
                 </div>
-              </div>
-              <div className="filt-sett flex">
-                <div className="fit-txt">Filter</div>
-                <IoSettingsSharp />
               </div>
             </div>
           </div>
-           </div>
 
           <div className="invoice-container flex justify-between pat-cont">
             <div
-              className={`last-side-container bg-white chan-brd rate-rgt ${
-                showSecondColumn ? " hidden" : "visible"
-              }`}
+              className={`last-side-container bg-white chan-brd rate-rgt ${showSecondColumn ? " hidden" : "visible"
+                }`}
             >
               <div className="reply-bxbx">
                 <div className="rate-row-container">
@@ -92,9 +90,8 @@ const MyRating = () => {
               </div>
             </div>
             <div
-              className={`side-first-container ratbd bg-white chan-brd rate-rgt ${
-                showSecondColumn ? "visible" : "hidden"
-              }`}
+              className={`side-first-container ratbd bg-white chan-brd rate-rgt ${showSecondColumn ? "visible" : "hidden"
+                }`}
             >
               <div className="profile-rate-box flex ">
                 <IoMdArrowRoundBack

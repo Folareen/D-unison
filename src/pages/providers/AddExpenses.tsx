@@ -1,6 +1,6 @@
 import { IoChevronDownOutline, IoAddOutline } from "react-icons/io5";
 import Layout from "../../components/Layout";
-import "../../assets/css/addexpenses.css";
+import "../../styles/addexpenses.css";
 const AddExpenses = () => {
   return (
     <div className="expense-container">

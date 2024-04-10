@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../../assets/css/layout.css";
+import "../../styles/layout.css";
 import { IoMdClose } from "react-icons/io";
 import { LiaFileInvoiceSolid, LiaLifeRing } from "react-icons/lia";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";

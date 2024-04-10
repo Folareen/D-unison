@@ -1,5 +1,5 @@
 import Layout from "../../components/Layout";
-import "../../assets/css/chat.css";
+import "../../styles/chat.css";
 import { FiChevronDown } from "react-icons/fi";
 import { RiAttachmentLine } from "react-icons/ri";
 import { BsFillSendFill } from "react-icons/bs";
@@ -11,14 +11,14 @@ import { CiSearch } from "react-icons/ci";
 
 const Chat = () => {
   const [showSecondColumn, setShowSecondColumn] = useState(false);
- 
- 
 
 
-  
- 
-  
-  
+
+
+
+
+
+
 
   const toggleSecondColumn = () => {
     setShowSecondColumn(true);
@@ -33,9 +33,8 @@ const Chat = () => {
         <div className="expense-box-cont">
           <div className="dow-row-container flex new-row-cat">
             <div
-              className={`chat-first-coloum ${
-                showSecondColumn ? " hidden" : "visible"
-              }`}
+              className={`chat-first-coloum ${showSecondColumn ? " hidden" : "visible"
+                }`}
             >
               <div className="mess-count-box flex">
                 <div className="mess-txt">Messages</div>
@@ -43,7 +42,7 @@ const Chat = () => {
                 <div className="count-mes">12</div>
               </div>
               <div className="search-chat-box">
-                <div className="sear-tst"><CiSearch/></div>
+                <div className="sear-tst"><CiSearch /></div>
                 <input
                   type="text"
                   className="sear-inp-bx"
@@ -126,9 +125,8 @@ const Chat = () => {
               </div>
             </div>
             <div
-              className={`chat-sencond-coloum ${
-                showSecondColumn ? "visible" : "hidden"
-              }`}
+              className={`chat-sencond-coloum ${showSecondColumn ? "visible" : "hidden"
+                }`}
             >
               <div className="profil-vist-mess flex mainc">
                 <IoMdArrowRoundBack
@@ -261,21 +259,21 @@ const Chat = () => {
                 </div>
 
                 <div className="send-mess-box flex">
-                <RiAttachmentLine className="icn" />
-                <div className="sen-input-main-cont flex">
-                  <input
-                    type="text"
-                    className="inp-send-bx"
-                    placeholder="Type a message"
-                  />
-                  <BsFillSendFill className="icn" />
+                  <RiAttachmentLine className="icn" />
+                  <div className="sen-input-main-cont flex">
+                    <input
+                      type="text"
+                      className="inp-send-bx"
+                      placeholder="Type a message"
+                    />
+                    <BsFillSendFill className="icn" />
+                  </div>
                 </div>
-              </div>
 
 
 
 
-                
+
 
 
               </div>

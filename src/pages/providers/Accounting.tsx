@@ -1,12 +1,12 @@
 import Layout from "../../components/Layout";
 import { MdDateRange } from "react-icons/md";
-import "../../assets/css/accounting.css";
+import "../../styles/accounting.css";
 import { IoSettingsSharp } from "react-icons/io5";
-import AccountingSmallCard from "../../components/Services/AccountingSmallCard";
-import ChartCardAcc from "../../components/Services/ChartCardAcc";
-import SummaryTopAccCard from "../../components/Services/SummaryTopAccCard";
-import SummaryDownCard from "../../components/Services/SummaryDownCard";
-import CalenderCard from "../../components/Services/CalenderCard";
+import AccountingSmallCard from "../../components/Providers/AccountingSmallCard";
+import ChartCardAcc from "../../components/Providers/ChartCardAcc";
+import SummaryTopAccCard from "../../components/Providers/SummaryTopAccCard";
+import SummaryDownCard from "../../components/Providers/SummaryDownCard";
+import CalenderCard from "../../components/Providers/CalenderCard";
 
 const data = [
   {

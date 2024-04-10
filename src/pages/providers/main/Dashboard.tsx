@@ -2,11 +2,11 @@ import "../../../styles/dash.css";
 import user_logo from "../../assets/images/user_logo.png";
 import Layout from "../../../components/Layout";
 import { IoCalendarClear, IoChevronDown } from "react-icons/io5";
-import RecAdx from "../../../components/Services/SmallComponent/recAdx";
-import DasCrd from "../../../components/Services/SmallComponent/dasCrd";
-import PieCard from "../../../components/Services/SmallComponent/PieCard";
-import ChartOrder from "../../../components/Services/SmallComponent/ChartOrder";
-import SliderBox from "../../../components/Services/SmallComponent/Slider";
+import RecAdx from "../../../components/Providers/SmallComponent/recAdx";
+import DasCrd from "../../../components/Providers/SmallComponent/dasCrd";
+import PieCard from "../../../components/Providers/SmallComponent/PieCard";
+import ChartOrder from "../../../components/Providers/SmallComponent/ChartOrder";
+import SliderBox from "../../../components/Providers/SmallComponent/Slider";
 
 import { AiOutlineSetting } from "react-icons/ai";
 import { GoBell } from "react-icons/go";
